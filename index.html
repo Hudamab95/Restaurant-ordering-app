@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        
+        <div class="container">
+             <header>
+            <div class="img">
+                <img src="images/burger.jpg" alt="a picture of a burger presented on a table" class="burger-img">
+            </div>
+            <div class="restaurant-description">
+                <h2 class="name">Jimmy’s Diner</h2>
+                <p class="description">The best burgers and pizzas in town.</p>
+            </div>
+             </header>
+          <main>  
+            <section id="content">
+            </section>
+            
+            <section class="total" id="total">
+            </section>
+             
+            <section id="modal" class="modal hidden">
+                <div class="modal-container">
+                        <p id="close-btn" class="close-btn">&times;</p>
+                        <h2>Enter card details</h2>
+                        <form action="#" method="post" class="modal-form" id="modal-form">
+                            <input type="text" name="username" id="username" placeholder="Enter your name" required />
+                            <input type="number" name="cardnumber" id="cardnumber" placeholder="Enter card number"
+                                required />
+                            <input type="password" name="cvv" id="cvv" placeholder="Enter CVV" required />
+                            <button type="submit" class="modal-btn" id="pay-btn">Pay</button>
+                        </form>
+                    </div>
+            </section>
+            <section id="confirmation" class="confirmation">
+                
+            </section>
+            <div class="overlay" id="overlay"></div>
+        </main>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

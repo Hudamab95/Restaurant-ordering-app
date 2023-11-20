@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+} 
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* header */
+
+.img {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.burger-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.restaurant-description {
+     position: absolute;
+    top: 20px;
+    margin: 0;
+    left: 40px;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 2px 1px black;
+}
+
+.name {
+   margin-bottom: 0px;
+    font-size: 39px;
+}
+
+.description {
+       font-size: 22px;
+        margin-top: 5px;
+}
+
+.name , .description {
+    color: #FFFFFF;
+    font-weight: lighter;
+    filter: drop-shadow(0px 0px 0px #000);
+}
+
+/* menu items */
+
+.section {
+    display: flex;
+    padding: 20px 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.items-img {
+    width: 80px;
+    height: 80pxpx;
+    margin: 0;
+    padding-right: 5px;
+}
+
+.items-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.items-name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.items-ingredients {
+    margin: 0;
+    font-weight: lighter;
+    color: #8B8B8B;
+    font-size: 16px;
+}
+
+.items-price {
+    margin-top: 4px;
+    font-weight: lighter;
+    font-size: 20px;
+} 
+
+
+#items-btn {
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #DEDEDE;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    padding: 0;
+    color: #3C3C3C;
+    margin-left: auto;
+}
+
+
+/* total details */
+
+.total{
+    display: flex;
+    flex-direction: column;
+    margin-top: px;
+    padding: 0 30px;
+  
+}
+
+.total-section {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.total-section > p {
+    font-size: 24px;
+}
+
+.total-details {
+    padding-bottom: 31px;
+    border-bottom: 1px solid #393333;
+}
+
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.order-item  {
+    font-size: 20px;
+}
+
+.order-price {
+    font-size: 20px;
+    margin-left: auto;
+    color: #8B8B8B;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-price > p {
+    font-size: 23px;
+}
+
+.total-price-value > p {
+    font-size: 20px;
+}
+
+.btn-container {
+    margin: 15px 0 15px 0;
+}
+
+.complete-order-btn, .modal-btn {
+    background: #16DB99;
+    color: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: none;
+    height: 60px;
+    width: 100%;
+}
+
+.remove-item-btn {
+    background: none;
+    border: none;
+    color: #BBBBBB;
+    font-size: 12px;
+    margin-left: 13px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* form */
+
+.modal {
+    border: 1px solid #16DB99;
+    width: 524px;
+    height: 524px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 250px;
+    left: 35px;
+    background-color: #FFF;
+    z-index: 3;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 2;
+}
+
+.modal h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.modal-btn {
+    width: auto;
+    height: 71px;
+
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form input {
+    width: 476px;
+    height: 71px;
+    margin-bottom: 22px;
+    padding-left: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+ 
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.modal-container {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* confirmation */
+
+.confirmation {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.order-thanks {
+    background-color: #ECFDF5;
+    color: #065F46;
+    height: 120px;
+    width: 504px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-thanks h2 {
+    text-align: center;
+    margin: 0;
+}
